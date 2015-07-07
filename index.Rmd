@@ -1,0 +1,45 @@
+---
+output:
+  html_document:
+    theme: cosmo
+---
+
+# A Bootcamp for Reproducible Data Analysis in R
+## California State University Chico
+### Math 199: Fall 2015
+
+This page was last updated on `r Sys.time()` California time.
+
+**Instructor:** [Robin Jeffries](http://webapps.csuchico.edu/directory/people/rjeffries)
+
+**Teaching assitant:** [Daniel Scheel](link)
+
+**Class Schedule:**
+
+* Fully online from 8/24 to 9/13.
+* In person problem solving sessions each Friday (time and loc TBD). 
+
+
+**Resources:**
+
+* [Rstudio](http://www.rstudio.com/)
+* [R project](http://www.r-project.org/)
+* [Rstudio's cheatsheets](http://www.rstudio.com/resources/cheatsheets/) 
+* [Piazza](https://piazza.com/account/login)
+
+
+**Getting Started:**
+
+Please read this to setup your installation of R, R Studio and to install required R packages
+https://github.com/norcalbiostat/R-Bootcamp/blob/gh-pages/lecture_notes/1_2_-_Setup_R_and_R_Studio.html 
+
+**Schedule**
+
+
+| Week  | Date  |  Lesson | Resources  |  Description |
+|---|---|---|---|---|
+| 0  | 2015-06-15  | Background  | [Try R](http://tryr.codeschool.com/)  | Really simple intro to R online  |
+| 0  | 2015-06-15  | Background | [swirl](http://swirlstats.com/)  | More tutorials on R, in R  |
+
+
+
