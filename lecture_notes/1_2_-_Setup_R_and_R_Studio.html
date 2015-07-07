@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Introduction to R and R Studio</title>
+  <title>Setting up R and R Studio</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,7 +26,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Introduction to R and R Studio',
+                title: 'Setting up R and R Studio',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -154,26 +154,61 @@
 
 </article></slide><slide class=''><hgroup><h2>Installing Packages</h2></hgroup><article  id="installing-packages">
 
-<p>Packages are sets of predefined code, functions and data sets. They provide additional functionality and goodies beyond what is included when you download Base R.</p>
-
-<div class="red">
-Packages are only installed once per computer ever</div>
-
-<p>During this course you will be asked to complete several interactive tutorials that use code found in the <code>swirl</code> package.</p>
-
-<p>To install the Swirl package type the following command at the prompt <code>&gt;</code> and hit enter to submit the command.</p>
+<ul>
+<li><p>Packages are sets of predefined code, functions and data sets. They provide additional functionality and goodies beyond what is included when you download Base R.</p></li>
+<li><div class="red">
+Packages are only installed once per computer ever</div></li>
+<li><p>During this course you will be asked to complete several interactive tutorials that use code found in the <code>swirl</code> package.</p></li>
+<li><p>To install the Swirl package type the following command at the prompt <code>&gt;</code> and hit enter to submit the command.</p></li>
+</ul>
 
 <pre class = 'prettyprint lang-r'>install.packages(&quot;swirl&quot;)</pre>
 
+</article></slide><slide class=''><hgroup><h2>Downloading Swirl lessons</h2></hgroup><article  id="downloading-swirl-lessons">
+
+<ul>
+<li><p>The <code>swirl</code> package and it&#39;s fantastic tutorials were created by the folks at <a href='http://swirlstats.com/' title=''><a href='http://swirlstats.com/' title=''>http://swirlstats.com/</a></a>. All of their work is free to use and modify under the GPLv3 copyright license.</p></li>
+<li><p>I have spliced and diced the lessons to fit this class. My thanks to them for doing all the hard work.</p></li>
+<li><p>Download the <a href='https://github.com/norcalbiostat/R-Bootcamp/blob/master/swirl.zip' title=''>zipped file</a> and place it into your <code>RBootcamp</code> folder.</p></li>
+<li><p>Leave a window open to this folder. You will need to know the path to this zip file next.</p></li>
+</ul>
+
 </article></slide><slide class=''><hgroup><h2>Installing Swirl lessons</h2></hgroup><article  id="installing-swirl-lessons">
 
-<p>The <code>swirl</code> package and it&#39;s fantastic tutorials were created by the folks at <a href='http://swirlstats.com/' title=''><a href='http://swirlstats.com/' title=''>http://swirlstats.com/</a></a>. All of their work is free to use and modify under the GPLv3 copyright license.</p>
+<p>The functions used to install the custom lessons are contained within the <code>swirl</code> package.</p>
 
-<p>I have spliced and diced the lessons to fit this class. My thanks to them for doing all the hard work.</p>
+<p>To get access to these functions you have to load the swirl library and then use the <code>install_course_zip()</code> function to install the lessons.</p>
 
-<p>To install the custom lessons built specifically for this class.</p>
+<pre class = 'prettyprint lang-r'>library(swirl)
+install_course_zip(&quot;YOUR PATH HERE/R-Bootcamp/swirl.zip&quot;, multi=TRUE)</pre>
 
-<pre class = 'prettyprint lang-r'>install_course_url(&quot;https://github.com/norcalbiostat/R-Bootcamp/blob/master/R%20Bootcamp.zip&quot;)</pre>
+<ul>
+<li>You must change <code>YOUR PATH HERE</code> to the path to where your RBootcamp folder is located.</li>
+<li>Only change the <code>PATH</code>.</li>
+<li>Be sure all slashes are forward <code>/</code></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Finding your path on a Mac</h2></hgroup><article  id="finding-your-path-on-a-mac">
+
+<ol>
+<li>Select the file or folder in the OS X Finder, then hit Command+i to summon Get Info</li>
+<li>Get Info can also be accessed by the control-click and right-click menus.</li>
+<li>Click and drag alongside “Where” to select the path, then hit Command+C to copy the full path to the clipboard</li>
+<li>Paste this into <code>R</code> for your path.</li>
+</ol>
+
+<p><a href='http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/' title=''>Reference website</a></p>
+
+</article></slide><slide class=''><hgroup><h2>Finding your path on Windows</h2></hgroup><article  id="finding-your-path-on-windows">
+
+<ol>
+<li>Open Windows Explorer and browse to the folder or file of your choice.</li>
+<li>The path to the folder/file will be indicated in the Address bar of Windows Explorer.</li>
+<li>To copy it, simply right-click on the Address bar and select <em>Copy address as text</em>.</li>
+<li>Paste this into <code>R</code> for your path.</li>
+</ol>
+
+<p><a href='http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder' title=''>Reference website</a></p>
 
 </article></slide><slide class=''><hgroup><h2>Using Swirl</h2></hgroup><article  id="using-swirl">
 
