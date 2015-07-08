@@ -12,8 +12,9 @@ This lesson will provide information on how to
 
 1. Install R  -- _The programming language_
 2. Install R Studio -- _A fantastic interface for coding in R_
-3. Set up preferences -- _To avoid common mistakes and pitfalls_
-4. Install Packages -- _Adds functionality to R_
+3. Basics of Navigating R Studio
+4. Set up preferences -- _To avoid common mistakes and pitfalls_
+5. Install Packages -- _Adds functionality to R_
 
 
 ## Installing R & R Studio
@@ -92,12 +93,13 @@ install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", multi=TRUE)
 * You must change `YOUR PATH HERE` to the path to where your RBootcamp folder is located. 
 * Only change the `PATH`. 
 * Be sure all slashes are forward `/`
+* You will *_FREQUENTLY_* have to insert this `PATH`, so if you have any questions **NOW** is the time to ask!
 
 ## Finding your path on a Mac
 
 1. Select the file or folder in the OS X Finder, then hit Command+i to summon Get Info
 2. Get Info can also be accessed by the control-click and right-click menus.
-3. Click and drag alongside “Where” to select the path, then hit Command+C to copy the full path to the clipboard 
+3. Click and drag alongside **FIX THIS **  to select the path, then hit Command+C to copy the full path to the clipboard 
 4. Paste this into `R` for your path. 
 
 
@@ -116,9 +118,9 @@ install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", multi=TRUE)
 
 
 ## Using Swirl
-That's material for Lab 1. 
+That's material for Lab 1!
 
-Go download it from [here](here) and start working on it. 
+Go download it from [here](here),put it in your `RBootcamp` folder, double click on it to open it in R Studio and start working on it. 
 
 Don't forget to use the [Piazza](link to piazza course) if you get stuck.
 

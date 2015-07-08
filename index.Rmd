@@ -4,41 +4,19 @@ output:
     theme: cosmo
 ---
 
-# A Bootcamp for Reproducible Data Analysis in R
-## California State University Chico
-### Math 199: Fall 2015
+# Tentative Schedule
+
+The links and/or schedule is subject to change. It is your responsibility to check here or the course on Piazza regularily for any updates. Rememember, this course is only 3 weeks long! 
+
 
 This page was last updated on `r Sys.time()` California time.
 
-**Instructor:** [Robin Jeffries](http://webapps.csuchico.edu/directory/people/rjeffries)
-
-**Teaching assitant:** [Daniel Scheel](link)
-
-**Class Schedule:**
-
-* Fully online from 8/24 to 9/13.
-* In person problem solving sessions each Friday (time and loc TBD). 
-
-
-**Resources:**
-
-* [Rstudio](http://www.rstudio.com/)
-* [R project](http://www.r-project.org/)
-* [Rstudio's cheatsheets](http://www.rstudio.com/resources/cheatsheets/) 
-* [Piazza](https://piazza.com/account/login)
-
-
-**Getting Started:**
-
-Please read [this](link to lecture notes 1.2)to setup your installation of R, R Studio and to install required R packages
-
-**Tentative Schedule**
 
 
 | Week  | Date  |  Lesson | Resources  |  Description |
 |---|---|---|---|---|
-| 0  | 2015-06-15  | Background  | [Try R](http://tryr.codeschool.com/)  | Really simple intro to R online  |
-| 0  | 2015-06-15  | Background | [swirl](http://swirlstats.com/)  | More tutorials on R, in R  |
+| 0  | 2015-08-24  | Background | [Try R](http://tryr.codeschool.com/)  | Installing R, R Studio and Swirl  |
+| 0  |             | Background | [swirl](http://swirlstats.com/)  | More tutorials on R, in R  |
 
 
 
