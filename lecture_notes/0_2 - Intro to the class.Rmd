@@ -91,6 +91,7 @@ The syllabus for the class can be found [here](). This covers course details suc
 
 ## Getting started!
 * Once you enroll in Math 199 check the course Blackboard Learn site. Use the link provided there to enroll in the [Piazza](https://piazza.com/account/login) class forum.
+* If you haven't done so already, review [these slides-fix this]() to install R and R Studio.
 * Introduce yourself the class forum board. 
-* Download Lab1 and get started coding! 
+* Download [Lab1-fix this]() and get started coding! 
 
