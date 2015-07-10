@@ -1,8 +1,3 @@
----
-output: 
-  html_document: 
-    keep_md: yes
----
 
 # Syllabus for Math 199 - Fall 2015 
 ## A Bootcamp for Reproducible Data Analysis in R
