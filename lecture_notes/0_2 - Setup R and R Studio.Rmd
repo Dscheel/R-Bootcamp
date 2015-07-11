@@ -1,10 +1,10 @@
 ---
 title: "Setting up R and R Studio"
 author: "Robin Jeffries"
-date: "\ `r Sys.Date()`"
+date: ' `r Sys.Date()`'
 output:
-  ioslides_presentation:
   beamer_presentation: default
+  ioslides_presentation: null
 ---
 
 ##  Overview
@@ -87,7 +87,8 @@ The functions used to install the custom lessons are contained within the `swirl
 To get access to these functions you have to load the swirl library and then use the `install_course_zip()` function to install the lessons. 
 ```{r, eval=FALSE}
 library(swirl)
-install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", multi=TRUE)
+install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", 
+                   multi=TRUE)
 ```
 
 * You must change `YOUR PATH HERE` to the path to where your RBootcamp folder is located. 
@@ -103,7 +104,7 @@ install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", multi=TRUE)
 4. Paste this into `R` for your path. 
 
 
-[Reference website](http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/)
+Ref: [http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/](http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/)
 
 
 ## Finding your path on Windows
@@ -114,15 +115,14 @@ install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", multi=TRUE)
 4. Paste this into `R` for your path. 
 
 
-[Reference website](http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder)
-
+Ref: [http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder](http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder)
 
 ## Using Swirl
 That's material for Lab 1!
 
-Go download it from [here](here),put it in your `RBootcamp` folder, double click on it to open it in R Studio and start working on it. 
+Go download it from [here](./labs/Lab1_-_Getting_Started_in_R.pdf),put it in your `RBootcamp` folder, double click on it to open it in R Studio and start working on it. 
 
-Don't forget to use the [Piazza](link to piazza course) if you get stuck.
+Don't forget to use the [Piazza](https://piazza.com/account/login) if you get stuck.
 
 
 

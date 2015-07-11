@@ -1,6 +1,8 @@
 ---
-output: 
-  html_document: 
+output:
+  pdf_document:
+    highlight: pygments
+  html_document:
     keep_md: yes
 ---
 
@@ -12,10 +14,10 @@ output:
 This bootcamp course serves as a primer to get the complete novice up and running with the basic knowledge of how to use the statistical programming language R. Topics include: R programming basics, importing data, properties of tidy data, visualizing data, reproducible research with Markdown and basic data management and debugging. 
 
 ### Course Information
-**INSTRUCTOR:** Dr. Robin Jeffries
-**OFFICE:** Holt 216
-**PHONE:** 898-5767
-**E-mail:** rjeffries@csuchico.edu
+**INSTRUCTOR:** Dr. Robin Jeffries  
+**OFFICE:** Holt 216  
+**PHONE:** 898-5767  
+**E-mail:** rjeffries@csuchico.edu  
 
 ### Meeting Times and Locations 
 None!
@@ -29,16 +31,16 @@ This is a fast paced 1 unit course conducted over 3 weeks. Learning a programmin
 
 ### Prerequisite
 Basic computer literacy. ELM status. 
-Review [these slides]("http://htmlpreview.github.io/?https://github.com/norcalbiostat/R-Bootcamp/blob/gh-pages/lecture_notes/0_2_-_Intro_to_the_class.html") on instructions on how to install the required programs. 
+Review the [Intro to the class]("/lecture_notes/0_1_-_Intro_to_the_class.pdf") slides on instructions on how to install the required programs. 
 
 ### Materials
 
-* Textbook: None Required. A list of recommended learning tools will be provided.  
+* Textbook: None Required. A list of recommended learning tools will be provided.
 * Computer: Mandatory. A reliable computer (laptop preferred) that you can install programs onto. See me if you do not have a personal computer. 
 * Reliable internet connection.
 
 ### Grading
-Credit / No Credit. Achieving 70\% or higher of available points is needed to earn credit. Points will be gained by completing each lab, swirl lesson and quiz.  
+Credit / No Credit. Achieving 70% or higher of available points is needed to earn credit. Points will be gained by completing each lab, swirl lesson and quiz.  
   
 ### Adding and Dropping the course
 TBD
@@ -47,7 +49,7 @@ TBD
 If you need course adaptations or accommodations because of a disability or chronic illness, please contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. The ARC phone number is 530-898-5959, arcdept@csuchico.edu
 
 ### Course outline
-The course schedule can be found [here](). Subject to minor modifications. All content will be made available on Day 1 of the course, however the quizzes and homeworks will have set deadlines. 
+The course schedule can be found [here]("Schedule.pdf"). Subject to minor modifications. All content will be made available on Day 1 of the course, however the quizzes and homeworks will have set deadlines. 
 
 It is your responsibility to frequently check the course Piazza forum for updates and changes. 
 

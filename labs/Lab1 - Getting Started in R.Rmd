@@ -1,0 +1,44 @@
+---
+title: 'Lab 1: Getting Started with R'
+output:
+  html_document:
+    highlight: pygments
+    theme: cerulean
+  pdf_document: default
+---
+
+# Introduction 
+The goal of this lab is to introduce you to the fundamental building blocks of the programming language R. You will start by going through some Swirl tutorials/lessons. Each lesson will take anywhere from 10-30 minutes and you can stop and restart them at any time (It will not save your spot mid-lesson). At the end of the lesson you will have the option to send me an email letting me know you have completed the lesson. **Do this so I can give you credit!**
+
+
+## Basic Building Blocks
+
+Each time you start a new session you will need to load the swirl package by typing `library(swirl)` in the console. Then type `swirl()` to start the tutorial. Follow the instruction prompts and enter your name, then choose the **Basic Building Blocks** lesson. 
+
+### Practice
+
+1. Use `sample(0:100, size=5)` to create vector of 5 random numbers between 1 and 100. Store this result as a variable `x`. 
+2. Calculate the following 
+
+$$
+\frac{(x - 5)^2}{\sqrt(50-1)}
+$$
+
+### Assessment
+Complete the **Basic Building Blocks** quiz on BBLearn.
+
+## Sequences of Numbers
+
+Next you're going to learn how to generate sequences of numbers. These objects you'll create are also called `vectors`. Complete the **Sequences of Numbers** swirl lesson. 
+
+### Practice
+
+1. List the even numbers from 1 to 12.
+2. List the numbers from 10 to 1 in descending order. 
+3. Create this sequence using `R`: ("A", "B", "C","A", "B", "C")
+4. Create this sequence using `R`: ("A", "A", "B","B", "C", "C")
+
+### Assessment
+Complete the **Sequences of Numbers** quiz on BBLearn.
+
+

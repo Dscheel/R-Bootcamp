@@ -1,10 +1,10 @@
 ---
 title: "A Bootcamp for Reproducible Data Analysis using R"
 author: "Robin Jeffries"
-date: "\ `r Sys.Date()`"
+date: ' `r Sys.Date()`'
 output:
-  ioslides_presentation:
   beamer_presentation: default
+  ioslides_presentation: null
 ---
 
 # Introduction to the class
@@ -87,11 +87,11 @@ And some [YouTube videos](https://www.youtube.com/channel/UCaNIxVagLhqupvUiDK01M
 
 ## Syllabus
 
-The syllabus for the class can be found [here](). This covers course details such as grading, office hours and required materials.
+The syllabus for the class can be found [here](./Syllabus.pdf). This covers course details such as grading, office hours and required materials.
 
 ## Getting started!
 * Once you enroll in Math 199 check the course Blackboard Learn site. Use the link provided there to enroll in the [Piazza](https://piazza.com/account/login) class forum.
-* If you haven't done so already, review [these slides-fix this]() to install R and R Studio.
+* Review [this](/0_2_-_Setup_R_and_R_Studio.pdf) set of slides to install R and R Studio.
 * Introduce yourself the class forum board. 
-* Download [Lab1-fix this]() and get started coding! 
+* Download [Lab1](/labs/Lab1_-_Getting_Started) and get started coding! 
 
