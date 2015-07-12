@@ -1,10 +1,10 @@
 - Class: meta
-  Course: R Programming
+  Course: R Bootcamp
   Lesson: Sequences of Numbers
-  Author: Nick Carchedi
+  Author: Robin Donatello
   Type: Standard
-  Organization: JHU Biostat
-  Version: 2.2.0
+  Organization: CSU Chico
+  Version: 1.0
 
 - Class: text
   Output: In this lesson, you'll learn how to create sequences of numbers in R.

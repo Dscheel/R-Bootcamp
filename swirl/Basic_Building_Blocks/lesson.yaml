@@ -1,10 +1,10 @@
 - Class: meta
-  Course: R Programming
+  Course: R Bootcamp
   Lesson: Basic Building Blocks
-  Author: Nick Carchedi
+  Author: Robin Donatello
   Type: Standard
-  Organization: JHU Biostat
-  Version: 2.2.0
+  Organization: CSU Chicoo
+  Version: 1.0
 
 - Class: text
   Output: In this lesson, we will explore some basic building blocks of the R programming
