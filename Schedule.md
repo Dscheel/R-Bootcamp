@@ -8,7 +8,7 @@ It is your responsibility to frequently check the course Piazza forum for update
 | Week  | Date(s)  |  Lesson | Materials  |  Description |
 |---|----------|---|---|---|
 | 0 | 8/23/15  | Background  | [Intro to Class](/lecture_notes/0_1_-_Intro_to_the_class.pdf), [Installing R & R Studio]("/lecture_notes/0_2_-_Setup_R_and_R_Studio.pdf")  | Introduction to the class, getting software installed.  |
-| 1 | 8/23 - 8/30  | Getting Started | [Lab 1](labs/Lab1_-_Getting Started in R.pdf)  | Getting Started with R. Basic arithmetic, evaluating equations, creating vectors and sequences of numbers.|
+| 1 | 8/23 - 8/30  | Getting Started | [Lab 1](labs/Lab1_-_Getting_Started_in_R.pdf)  | Getting Started with R. Basic arithmetic, evaluating equations, creating vectors and sequences of numbers.|
 |   |   | Logic & Missing Values | [Lab 2](labs/Lab2_-_Logic_and_Missing_Data.pdf)  | Logical operators and expressions, how **R** deals with missing values. | 
 |   |   | Subsetting vectors | [Lab 3](link)  | Extracting subsets of data from vectors using positional and logical arguments. |
 |   | 8/30  |   | [Quiz 1](link)  | Quiz on Intro materials and Labs 1-3. Due by midnight. |
