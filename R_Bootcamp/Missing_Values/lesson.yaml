@@ -1,10 +1,11 @@
 - Class: meta
-  Course: R Bootocamp
+  Course: R Bootcamp
   Lesson: Missing Values
   Author: Robin Donatello
   Type: Standard
   Organization: CSU Chico
-  Version: 1.0
+  Version: 2.3.1
+
 
 - Class: text
   Output: Missing values play an important role in statistics and data analysis. Often, missing values must not be ignored, 
@@ -128,4 +129,3 @@
   AnswerChoices: Yes; No
   AnswerTests: notify()
   Hint: NULL
-

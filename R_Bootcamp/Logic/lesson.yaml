@@ -4,8 +4,9 @@
   Author: Robin Donatello
   Type: Standard
   Organization: CSU Chico
-  Version: 1.0
-
+  Version: 2.3.1
+  
+  
 - Class: text
   Output: This lesson is meant to be a short introduction to logical operations in R.
 
@@ -136,3 +137,5 @@
   AnswerChoices: Yes; No
   AnswerTests: notify()
   Hint: NULL
+  
+  
