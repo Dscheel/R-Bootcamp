@@ -77,7 +77,7 @@ install.packages("swirl")
 
 * I have spliced and diced the lessons to fit this class. My thanks to them for doing all the hard work. 
 
-* Download the [zipped file](https://github.com/norcalbiostat/R-Bootcamp/blob/master/swirl.zip) and place it into your `RBootcamp` folder.
+* Download the [zipped file](https://github.com/norcalbiostat/R-Bootcamp/blob/master/swirl_lessons.zip) and place it into your `RBootcamp` folder.
 
 * Leave a window open to this folder. You will need to know the path to this zip file next. 
 
@@ -87,8 +87,7 @@ The functions used to install the custom lessons are contained within the `swirl
 To get access to these functions you have to load the swirl library and then use the `install_course_zip()` function to install the lessons. 
 ```{r, eval=FALSE}
 library(swirl)
-install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip", 
-                   multi=TRUE)
+install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl_lessons.zip")
 ```
 
 * You must change `YOUR PATH HERE` to the path to where your RBootcamp folder is located. 
@@ -102,7 +101,7 @@ install_course_zip("YOUR PATH HERE/R-Bootcamp/swirl.zip",
 2. Get Info can also be accessed by the control-click and right-click menus.
 3. Click and drag alongside **FIX THIS **  to select the path, then hit Command+C to copy the full path to the clipboard 
 4. Paste this into `R` for your path. 
-
+5. Make sure all slashes are forward slashes `/`.
 
 Ref: [http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/](http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/)
 
@@ -113,6 +112,7 @@ Ref: [http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/](http://osx
 2. The path to the folder/file will be indicated in the Address bar of Windows Explorer.
 3. To copy it, simply right-click on the Address bar and select _Copy address as text_.
 4. Paste this into `R` for your path. 
+5. Make sure all slashes are forward slashes `/`.
 
 
 Ref: [http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder](http://ccm.net/faq/31588-windows-8-easily-copy-the-full-path-of-a-file-folder)
@@ -122,7 +122,7 @@ That's material for Lab 1!
 
 Go download it from [here](./labs/Lab1_-_Getting_Started_in_R.pdf),put it in your `RBootcamp` folder, double click on it to open it in R Studio and start working on it. 
 
-Don't forget to use the [Piazza](https://piazza.com/account/login) if you get stuck.
+Don't forget to use the [Piazza](https://piazza.com/account/login) forum to ask questions if you get stuck.
 
 
 
