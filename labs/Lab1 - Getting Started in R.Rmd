@@ -41,6 +41,4 @@ Next you're going to learn how to generate sequences of numbers. These objects y
 ### Assessment
 Complete the **Sequences of Numbers** quiz on BBLearn.
 
-## Additional Resources
-[MartinStatsLectures: R Tutorial 1.1 - Getting started with R ](https://www.youtube.com/watch?v=UYclmg1_KLk)
 
