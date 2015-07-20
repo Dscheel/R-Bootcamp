@@ -2,7 +2,7 @@
 library(swirlify)
 
 # Set up a new lesson in an existing course
-new_lesson("Missing Values", "R Bootcamp")
+new_lesson("Subsetting Vectors", "R Bootcamp")
 
 # Open existing lesson
 set_lesson("C:/Dropbox/CSUC/RBootcamp/R_Bootcamp/Basic_Building_Blocks/lesson.yaml")
