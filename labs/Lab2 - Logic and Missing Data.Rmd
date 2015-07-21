@@ -33,5 +33,5 @@ Complete the **Missing Values** swirl lesson.
 2. Wrap the `sum()` function around the `is.na()` function to find the answer to the above question in one step. Hint: functions can be nested: `f(g(x))`.
 
 ### Assessment
-Complete the **Missing Data** quiz on BBLearn.
+Complete the **Missing Values** quiz on BBLearn.
 

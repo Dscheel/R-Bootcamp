@@ -17,8 +17,9 @@ Complete the **Subsetting Vectors** Swirl lesson.
 
 ### Practice
 
-1. Create a vector of 
-2. 
+1. Create a vector of 100 random normal values by typing `rnorm(100)` and assigning it to a vector. 
+2. Print out the top 10 values.
+3. Print out the values that are greater than 3. Assign this to a new vector object named `y`. 
 
 ## Subsetting vectors using `subset()`. 
 
@@ -30,8 +31,8 @@ In this lab we will cover another way to subset the data using the function `sub
 
 ### Practice
 
-1. Create a vector of 
-2. 
+1. Repeat number 3 from the prior practice but use the `subset()` function. Assign this to a new vector object named `z`.
+2. Prove that these two methods produce the exact same subset by typing `identical(y,z)`.
 
 
 ### Assessment

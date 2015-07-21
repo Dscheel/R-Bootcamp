@@ -91,7 +91,7 @@
 - Class: text
   Output: Just like with arithmetic operators, logical operators follow the order of operations (PEMDAS). 
     The expressions inside the operators are evaluated first. (3>5) != (4==4) becomes (FALSE) != (TRUE), 
-    which is evaluated as FALSE.
+    which is evaluated as TRUE.
   
 - Class: text
   Output: If we have two logical expressions, A and B, we can ask whether at least
