@@ -1,10 +1,10 @@
 ---
 title: 'Lab 1: Getting Started with R'
 output:
+  pdf_document: default
   html_document:
     highlight: pygments
     theme: cerulean
-  pdf_document: default
 ---
 
 # Introduction 
@@ -38,9 +38,8 @@ Next you're going to learn how to generate sequences of numbers. These objects y
 3. Create this sequence using `R`: ("A", "B", "C","A", "B", "C")
 4. Create this sequence using `R`: ("A", "A", "B","B", "C", "C")
 
-### Assessment
-Complete the **Sequences of Numbers** quiz on BBLearn.
+<!-- Assessment questions -->
 
 ## Additional Resources
-[MartinStatsLectures: R Tutorial 1.1 - Getting started with R ](https://www.youtube.com/watch?v=UYclmg1_KLk)
+* [MartinStatsLectures: R Tutorial 1.1 - Getting started with R ](https://www.youtube.com/watch?v=UYclmg1_KLk)
 

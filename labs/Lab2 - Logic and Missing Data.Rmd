@@ -32,6 +32,7 @@ Complete the **Missing Values** swirl lesson.
 1. When you loaded the missing data swirl lesson, a vector called `Nile` should have been created in your environment. How many missing values does this vector have?
 2. Wrap the `sum()` function around the `is.na()` function to find the answer to the above question in one step. Hint: functions can be nested: `f(g(x))`.
 
-### Assessment
-Complete the **Missing Values** quiz on BBLearn.
+
+
+<!-- Assessment questions -->
 

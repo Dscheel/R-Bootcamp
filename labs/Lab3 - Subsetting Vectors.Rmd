@@ -34,9 +34,13 @@ In this lab we will cover another way to subset the data using the function `sub
 1. Repeat number 3 from the prior practice but use the `subset()` function. Assign this to a new vector object named `z`.
 2. Prove that these two methods produce the exact same subset by typing `identical(y,z)`.
 
+## Additional Resources
 
-### Assessment
-Complete the **Subsetting Vectors** quiz on BBLearn.
+* [MartinStatsLectures: R Tutorial 1.2 - Getting started with R, Part II ](https://www.youtube.com/watch?v=2TcPAZOyV0U)  
+* [MartinStatsLectures: R Tutorial 1.6 - Subsetting Data in R with Square Brackets and Logic Statements](https://www.youtube.com/watch?v=jGf7WNh-LX8)
+
+
+<!-- Assessment questions -->
 <!-- What is head(x) equal to?  x[1:6] -->
 <!-- What is the equivelant notation to subset(x[x>0])? x[x>0 & !is.na(x)] -->
 <!-- What does subset() do? Return subsets of vectors, matrices or data frames which meet conditions. -->
