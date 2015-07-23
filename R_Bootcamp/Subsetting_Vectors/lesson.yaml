@@ -132,7 +132,7 @@
     of `x` where the elements off `x` satisfied a certain criteria.
     
 - Class: text
-  Outputt: Sometimes it is beneficial to retain that vector of TRUE/FALSE values that
+  Output: Sometimes it is beneficial to retain that vector of TRUE/FALSE values that
     correspond to the set of conditions for later use. Let's do a simple example. 
 
 - Class: cmd_question
