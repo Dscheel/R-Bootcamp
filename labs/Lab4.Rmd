@@ -1,0 +1,17 @@
+---
+title: 'Lab 4: Subsetting Vectors'
+output:
+  pdf_document: default
+  html_document:
+    highlight: pygments
+    theme: cerulean
+---
+
+# Introduction 
+The goal of this lab is to introduce you to how to extract certain elements from a data vector in R. You will complete one Swirl lessons and some additional exercises specified in this lab. You can stop and restart the `swirl()` lesson at any time, just type `bye()` to save your progress before exiting. Be sure to use the same name each time so you pick up where you left off. At the end of the lesson you will have the option to send me an email letting me know you have completed the lesson. **Do this so I can give you credit!**
+
+
+## Matricies and Data Frames
+
+Complete the **Matricies and Data Frames** Swirl lesson. 
+
