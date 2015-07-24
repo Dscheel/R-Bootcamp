@@ -13,8 +13,8 @@
 
 - Class: text
   Output: For example, we may only be interested in the first 20 elements of 
-    a vector, or only the elements that are not NA, or only those that are 
-    or correspond to a specific variable of interest. By the end of this lesson, 
+    a vector, or only the elements that are not NA, or only those that correspond 
+    to a specific variable of interest. By the end of this lesson, 
     you'll know how to handle each of these scenarios.
 
 - Class: cmd_question
@@ -128,9 +128,9 @@
 
 
 - Class: text
-  Output: Let's step back and to the sidie for a moment. I just showed you how to subset
+  Output: Let's step back and to the side for a moment. I just showed you how to subset
     a vector of data using a logical condition. In other words, you returned the values
-    of `x` where the elements off `x` satisfied a certain criteria.
+    of `x` where the elements of `x` satisfied a certain criteria.
     
 - Class: text
   Output: Sometimes it is beneficial to retain that vector of TRUE/FALSE values that
