@@ -3,6 +3,7 @@ title: 'Lab 3: Generating and working with Data'
 output:
   pdf_document: 
     highlight: zenburn
+    number_sections: yes
   html_document:
     highlight: pygments
     theme: cerulean
@@ -19,11 +20,11 @@ Complete the **Matricies and Data Frames** Swirl lesson.
 
 ### Practice
 Start a new script file. Recreate the following data frame by typing your commands in the code editor. Save the data frame as an object named `iris2`.  
-Ignore the Source: and Groups: header material. Note the first row indicate row numbers, they are not part of the data. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr); library(readr)
-iris %>%  group_by(Species) %>% slice(1)
+a <- iris %>%  group_by(Species) %>% slice(1)
+knitr::kable(a)
 ```
 
 
@@ -45,26 +46,19 @@ Review the lecture notes on [Tidy Data](Link).
 The following is data collected by the Pew Research Center that examines the relationship between income and religion in the US. In other words, which religions have the wealthiest adherents? 
 ```{r, echo=FALSE}
 pew <- read_csv("tidy/pew.csv")
-pew[-5,]
+knitr::kable(pew[-5,1:8])
 ```
 
 1. What characteristics are being measured here? Hint: There are 3. 
-2. What columns are present in the data but not being displayed here? 
-3. Is this tidy data? 
-4. What would a tidy version of this data set look like? 
+2. Is this tidy data? 
+3. What would a tidy version of this data set look like? 
 
 
 ## Importing Data
 
 In this bootcamp we are only going to explore reading flat files that exist on your computer into R from three most commonly used data sources: A text file, A CSV file and an Excel file. 
 
-Files to download and put into your RBootcamp folder. Make sure you right click and save as, do not just left click or the text file will open in your browser. You cannot save the file as a .txt from an open web page. 
-
-* [email50](,./data/email50.txt)
-* [NCbirths](../data/NCbirths.csv)
-* [OSCounty](../data/OSCounty.xlsx)
-
-Go ahead and open them just to see what they look like. 
+Go to the [Course schedule](http://norcalbiostat.github.io/R-Bootcamp/Schedule.html) and download the files for this lab. Be sure to put into your RBootcamp folder. You have to \textcolor{red}{right click} and select \textcolor{red}{save as} to correctly save the Email file}. Otherwise it will open in a browser window and you _cannot_ save it from there correctly. Once they are in your RBootcamp folder, go ahead and open them just to see what they look like. 
 
 #### Text and CSV files
 Text files are very simple files that have a `.txt` file extension. Columns are separated by a `delimiter`. Common delimiters include a space, a comma (.) or a tab. Uncommon delimiters could include a % or even a semi-colon. Follow along with these examples and make sure you can read in the data correctly and that it matches what is shown below. 
@@ -95,11 +89,13 @@ The best method I have found so far to read in Excel files is from the `readxl` 
 
 The `read_excel()` function is what we are going to use. Note the use of the underscore `_` instead of a period `.` between read and the file type.  
 
-```{r}
+```{r, eval=-6}
 library(readxl)
 OSCounty <- read_excel("../data/OSCounty.xlsx", sheet=1, col_names=TRUE)
+dim(OSCounty)
+class(OSCounty)
 OSCounty[1:6,1:6]
-# str(OSCounty) Not displayed due to its length. 
+str(OSCounty) #Not run due to the length of output. 
 ```
 
 Notice that `OSCounty` isn't just a data frame, but also of class `tbl_df`. It's just another format of data storage. You are welcome to look up the differnces and any advantages of using `tbl_df` over `data.frame` on your own time, we will not cover those differences in this class. 

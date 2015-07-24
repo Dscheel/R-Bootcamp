@@ -3,6 +3,7 @@ title: 'Lab 2: Subsetting Vectors and using the code editor'
 output:
   pdf_document: 
     highlight: zenburn
+    number_sections: yes
   html_document:
     highlight: pygments
     theme: cerulean
@@ -35,7 +36,7 @@ In this lab we will cover another way to subset the data using the function `sub
 1. Repeat number 3 from the prior practice but use the `subset()` function. Assign this to a new vector object named `z`.
 2. Prove that these two methods produce the exact same subset by typing `identical(y,z)`.
 
-#### Additional Resources
+**Additional Resources**
 
 * [MartinStatsLectures: R Tutorial 1.2 - Getting started with R, Part II ](https://www.youtube.com/watch?v=2TcPAZOyV0U)  
 * [MartinStatsLectures: R Tutorial 1.6 - Subsetting Data in R with Square Brackets and Logic Statements](https://www.youtube.com/watch?v=jGf7WNh-LX8)
@@ -70,7 +71,7 @@ Test it out by calling the function.  Make sure you see the same output as is di
 add_for_me(5,6)
 ```
 
-
+What does this function do? We will not disucss user defined functions in this class but as you can see they can be pretty easy and useful!
 
 <!-- Assessment questions -->
 <!-- What is head(x) equal to?  x[1:6] -->

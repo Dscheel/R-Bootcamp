@@ -1,7 +1,9 @@
 ---
 title: 'Lab 1: Getting Started with R'
 output:
-  pdf_document: default
+  pdf_document: 
+    highlight: zenburn
+    number_sections: yes
   html_document:
     highlight: pygments
     theme: cerulean

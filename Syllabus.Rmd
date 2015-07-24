@@ -31,7 +31,7 @@ This is a fast paced 1 unit course conducted over 3 weeks. Learning a programmin
 
 ### Prerequisite
 Basic computer literacy. ELM status. 
-Review the [Intro to the class](/lecture_notes/0_1_-_Intro_to_the_class.pdf) slides on instructions on how to install the required programs. 
+Review the [Intro to the class](http://norcalbiostat.github.io/R-Bootcamp/lecture_notes/0_1_-_Intro_to_the_class.pdf) slides on instructions on how to install the required programs. 
 
 ### Materials
 

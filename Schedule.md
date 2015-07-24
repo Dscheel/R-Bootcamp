@@ -8,7 +8,7 @@ It is your responsibility to frequently check the course Piazza forum for update
 | 0 | 8/23/15 | [Intro to Class](lecture_notes/0_1_-_Intro_to_the_class.pdf), [Installing R & R Studio](lecture_notes/0_2_-_Setup_R_and_R_Studio.pdf), [Swirl lessons](swirl_lessons.zip) | Introduction to the class, getting software installed. |
 | 1 | 8/23 - 8/30 | [Lab 1](labs/Lab1_-_Getting_Started_in_R.pdf) | Getting Started with R. Basic arithmetic, evaluating equations, creating vectors and sequences of numbers, logical operators and expressions, missing values. |
 |  |  | [Lab 2](labs/Lab2_-_Subsetting_Vectors.pdf) | Extracting subsets of data from vectors. |
-|  |  | [Lab 3](labs/Lab3_-_Generating_Data.pdf) | Matricies and data frames. Looking at data. Importing Data into R. |
+|  |  | [Lab 3](labs/Lab3_-_Generating_Data.pdf), [email50](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/email50.txt), [NCbirths](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/NCbirths.csv), [OSCounty](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/OSCounty.xlsx)| Matricies and data frames. Looking at data. Importing Data into R. |
 |  | 8/30 | [Quiz 1](link) | Quiz on Intro materials and Labs 1-3. Due by midnight. |
 | 2 | 8/31 - 9/06 | [Lab 4](link) | General structure of functions and arguments. Summary statistics |
 |  |  | [Lab 5](link) | Data cleaning and aggregation with `dplyr()` |
