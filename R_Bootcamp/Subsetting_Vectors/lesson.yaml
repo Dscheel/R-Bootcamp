@@ -6,28 +6,29 @@
   Organization: California State University Chico
   Version: 2.3.1
 
+
 - Class: text
   Output: In this lesson, we'll see how to extract elements from a vector 
-  based on some conditions that we specify.
+    based on some conditions that we specify.
 
 - Class: text
   Output: For example, we may only be interested in the first 20 elements of 
-  a vector, or only the elements that are not NA, or only those that are 
-  or correspond to a specific variable of interest. By the end of this lesson, 
-  you'll know how to handle each of these scenarios.
+    a vector, or only the elements that are not NA, or only those that are 
+    or correspond to a specific variable of interest. By the end of this lesson, 
+    you'll know how to handle each of these scenarios.
 
 - Class: cmd_question
   Output: I've created for you a vector called x that contains a random 
-  ordering of 20 numbers (from a standard normal distribution) and 20 NAs. 
-  Type x now to see what it looks like.
+    ordering of 20 numbers (from a standard normal distribution) and 20 NAs. 
+    Type x now to see what it looks like.
   CorrectAnswer: x
   AnswerTests: omnitest(correctExpr='x')
   Hint: Type x to view its contents.
 
 - Class: text
   Output: The standard way you tell R that you want to select some particular 
-  elements (i.e. a 'subset') from a vector is by placing an 'index vector' 
-  in square brackets immediately following the name of the vector.
+    elements (i.e. a 'subset') from a vector is by placing an 'index vector' 
+    in square brackets immediately following the name of the vector.
 
 - Class: cmd_question
   Output: For a simple example, try x[1:10] to view the first ten elements of x.
@@ -37,25 +38,25 @@
 
 - Class: text
   Output: Index vectors come in four different flavors -- logical vectors, 
-  vectors of positive integers, vectors of negative integers, and vectors 
-  of character strings -- each of which we'll cover in this lesson.
+    vectors of positive integers, vectors of negative integers, and vectors 
+    of character strings -- each of which we'll cover in this lesson.
 
 - Class: text
   Output: Let's start by indexing with logical vectors. One common scenario 
-  when working with real-world data is that we want to extract all elements 
-  of a vector that are not NA (i.e. missing data). Recall that is.na(x) yields 
-  a vector of logical values the same length as x, with TRUEs corresponding to 
-  NA values in x and FALSEs corresponding to non-NA values in x.
+    when working with real-world data is that we want to extract all elements 
+    of a vector that are not NA (i.e. missing data). Recall that is.na(x) yields 
+    a vector of logical values the same length as x, with TRUEs corresponding to 
+    NA values in x and FALSEs corresponding to non-NA values in x.
   
   
 - Class: mult_question
   Output: What do you think x[is.na(x)] will give you?
   AnswerChoices: A vector of all NAs; A vector with no NAs; A vector of TRUEs 
-  and FALSEs; A vector of length 0
+    and FALSEs; A vector of length 0
   CorrectAnswer: A vector of all NAs
   AnswerTests: omnitest(correctVal="A vector of all NAs")
   Hint: Remember that is.na(x) tells us where the NAs are in a vector. So if 
-  we subset x based on that, what do you expect to happen?
+    we subset x based on that, what do you expect to happen?
 
 - Class: cmd_question
   Output: Prove it to yourself by typing x[is.na(x)].
@@ -65,9 +66,9 @@
 
 - Class: cmd_question
   Output: Recall that `!` gives us the negation of a logical expression, so 
-  !is.na(x) can be read as 'is not NA'. Therefore, if we want to create a vector 
-  called y that contains all of the non-NA values from x, we can use y <- x[!is.na(x)]. 
-  Give it a try.
+    !is.na(x) can be read as 'is not NA'. Therefore, if we want to create a vector 
+    called y that contains all of the non-NA values from x, we can use y <- x[!is.na(x)]. 
+    Give it a try.
   CorrectAnswer: y <- x[!is.na(x)]
   AnswerTests: omnitest(correctExpr='y <- x[!is.na(x)]')
   Hint: Type y <- x[!is.na(x)] to capture all non-missing values from x.
@@ -80,50 +81,50 @@
 
 - Class: text
   Output: Now that we've isolated the non-missing values of x and put them in y, 
-  we can subset y as we please.
+    we can subset y as we please.
 
 - Class: mult_question
   Output: Recall that the expression y > 0 will give us a vector of logical values 
-  the same length as y, with TRUEs corresponding to values of y that are greater 
-  than zero and FALSEs corresponding to values of y that are less than or equal 
-  to zero. What do you think y[y > 0] will give you?
+    the same length as y, with TRUEs corresponding to values of y that are greater 
+    than zero and FALSEs corresponding to values of y that are less than or equal 
+    to zero. What do you think y[y > 0] will give you?
   AnswerChoices: A vector of all the positive elements of y; A vector of all the 
-  negative elements of y; A vector of all NAs; A vector of length 0; A vector of 
-  TRUEs and FALSEs
+    negative elements of y; A vector of all NAs; A vector of length 0; A vector of 
+    TRUEs and FALSEs
   CorrectAnswer: A vector of all the positive elements of y
   AnswerTests: omnitest(correctVal="A vector of all the positive elements of y")
   Hint: The logical expression y > 0 will give us TRUE for each element of y 
-  that is positive. Based on that, what do you think y[y > 0] will return?
+    that is positive. Based on that, what do you think y[y > 0] will return?
 
 - Class: cmd_question
   Output: Type y[y > 0] to see that we get all of the positive elements of y, 
-  which are also the positive elements of our original vector x.
+    which are also the positive elements of our original vector x.
   CorrectAnswer: y[y > 0]
   AnswerTests: omnitest(correctExpr='y[y > 0]')
   Hint: Type y[y > 0] to view only the positive elements of y.
 
 - Class: cmd_question
   Output: You might wonder why we didn't just start with x[x > 0] to isolate the 
-  positive elements of x. Try that now to see why.
+    positive elements of x. Try that now to see why.
   CorrectAnswer: x[x > 0]
   AnswerTests: omnitest(correctExpr='x[x > 0]')
   Hint: Try x[x > 0] to see why we didn't use this approach.
 
 - Class: text
   Output: Since NA is not a value, but rather a placeholder for an unknown quantity, 
-  the expression NA > 0 evaluates to NA. Hence we get a bunch of NAs mixed in with 
-  our positive numbers when we do this.
+    the expression NA > 0 evaluates to NA. Hence we get a bunch of NAs mixed in with 
+    our positive numbers when we do this.
 
 - Class: cmd_question
   Output: Combining our knowledge of logical operators with our new knowledge of 
-  subsetting, we could do this -- x[!is.na(x) & x > 0]. Try it out.
+    subsetting, we could do this -- x[!is.na(x) & x > 0]. Try it out.
   CorrectAnswer: x[!is.na(x) & x > 0]
   AnswerTests: omnitest(correctExpr='x[!is.na(x) & x > 0]')
   Hint: Try x[!is.na(x) & x > 0] to see what you get.
 
 - Class: text
   Output: In this case, we request only values of x that are both non-missing AND 
-  greater than zero.
+    greater than zero.
 
 
 - Class: text
@@ -181,61 +182,60 @@
   
 - Class: text
   Output: I've already shown you how to subset just the first ten values of x using 
-  x[1:10]. In this case, we're providing a vector of positive integers inside of the 
-  square brackets, which tells R to return only the elements of x numbered 1 through 10.
+    x[1:10]. In this case, we're providing a vector of positive integers inside of the 
+    square brackets, which tells R to return only the elements of x numbered 1 through 10.
 
 
 - Class: cmd_question
   Output: Can you figure out how we'd subset the 3rd, 5th, and 7th elements of x? 
-  Hint -- Use the c() function to specify the element numbers as a numeric vector.
+    Hint -- Use the c() function to specify the element numbers as a numeric vector.
   CorrectAnswer: x[c(3, 5, 7)]
   AnswerTests: omnitest(correctExpr='x[c(3, 5, 7)]')
   Hint: Create a vector of indexes with c(3, 5, 7), then put that inside of the 
-  square brackets.
+    square brackets.
 
 - Class: cmd_question
   Output: It's important that when using integer vectors to subset our vector x, 
-  we stick with the set of indexes {1, 2, ..., 40} since x only has 40 elements. 
-  What happens if we ask for the zeroth element of x (i.e. x[0])? Give it a try.
+    we stick with the set of indexes {1, 2, ..., 40} since x only has 40 elements. 
+    What happens if we ask for the zeroth element of x (i.e. x[0])? Give it a try.
   CorrectAnswer: x[0]
   AnswerTests: omnitest(correctExpr='x[0]')
   Hint: Try x[0] to see what happens when we refer to the zeroth element of a vector, 
-  which is not defined in R.
+    which is not defined in R.
 
 - Class: cmd_question
   Output: As you might expect, we get nothing useful. Unfortunately, R doesn't 
-  prevent us from doing this. What if we ask for the 3000th element of x? Try it out.
+    prevent us from doing this. What if we ask for the 3000th element of x? Try it out.
   CorrectAnswer: x[3000]
   AnswerTests: omnitest(correctExpr='x[3000]')
   Hint: Request the 3000th element of x (which does not exist) with x[3000].
 
 - Class: text
   Output: Again, nothing useful, but R doesn't prevent us from asking for it. 
-  This should be a cautionary tale. You should always make sure that what you are 
-  asking for is within the bounds of the vector you're working with.
+    This should be a cautionary tale. You should always make sure that what you are 
+    asking for is within the bounds of the vector you're working with.
 
 - Class: text
   Output: What if we're interested in all elements of x EXCEPT the 2nd and 10th? 
-  It would be pretty tedious to construct a vector containing all numbers 1 through 
-  40 EXCEPT 2 and 10.
+    It would be pretty tedious to construct a vector containing all numbers 1 through 
+    40 EXCEPT 2 and 10.
 
 - Class: cmd_question
   Output: Luckily, R accepts negative integer indexes. Whereas x[c(2, 10)] gives us 
-  ONLY the 2nd and 10th elements of x, x[c(-2, -10)] gives us all elements of x 
-  EXCEPT for the 2nd and 10 elements.  Try x[c(-2, -10)] now to see this.
+    ONLY the 2nd and 10th elements of x, x[c(-2, -10)] gives us all elements of x 
+    EXCEPT for the 2nd and 10 elements.  Try x[c(-2, -10)] now to see this.
   CorrectAnswer: x[c(-2, -10)]
   AnswerTests: omnitest(correctExpr='x[c(-2, -10)]')
   Hint: Give x[c(-2, -10)] a try.
 
 - Class: cmd_question
   Output: A shorthand way of specifying multiple negative numbers is to put the 
-  negative sign out in front of the vector of positive numbers. Type x[-c(2, 10)] 
-  to get the exact same result.
+    negative sign out in front of the vector of positive numbers. Type x[-c(2, 10)] 
+    to get the exact same result.
   CorrectAnswer: x[-c(2, 10)]
   AnswerTests: omnitest(correctExpr='x[-c(2, 10)]')
   Hint: Use x[-c(2, 10)] to simply things a bit. This could be a time saver if 
-  specifying many negative indexes.
-  
+    specifying many negative indexes.
   
 - Class: text
   Output: So far we have been dealing entirely with numerical vectors. Character 
@@ -262,7 +262,7 @@
 
 - Class: cmd_question
   Output: Character vectors can be indexed in the exact same way as numeric vectors. 
-  Extract the second element from the vector 'my_char' using the bracket '[]'  notation. 
+    Extract the second element from the vector 'my_char' using the bracket '[]'  notation. 
   CorrectAnswer: my_char[2]
   AnswerTests: omnitest(correctExpr='my_char[2]')
   Hint: Type my_char[j] to extract the 'j'th element..
@@ -271,7 +271,7 @@
   
 - Class: text
   Output: Now you know all four methods of subsetting data from vectors. Different 
-  approaches are best in different scenarios and when in doubt, try it out!
+    approaches are best in different scenarios and when in doubt, try it out!
 
 - Class: mult_question
   Output: Would you like to inform someone about your successful completion of this lesson?
