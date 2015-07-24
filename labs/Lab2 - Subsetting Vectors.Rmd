@@ -1,7 +1,8 @@
 ---
-title: 'Lab 3: Subsetting Vectors'
+title: 'Lab 2: Subsetting Vectors and using the code editor'
 output:
-  pdf_document: default
+  pdf_document: 
+    highlight: zenburn
   html_document:
     highlight: pygments
     theme: cerulean
@@ -34,10 +35,41 @@ In this lab we will cover another way to subset the data using the function `sub
 1. Repeat number 3 from the prior practice but use the `subset()` function. Assign this to a new vector object named `z`.
 2. Prove that these two methods produce the exact same subset by typing `identical(y,z)`.
 
-## Additional Resources
+#### Additional Resources
 
 * [MartinStatsLectures: R Tutorial 1.2 - Getting started with R, Part II ](https://www.youtube.com/watch?v=2TcPAZOyV0U)  
 * [MartinStatsLectures: R Tutorial 1.6 - Subsetting Data in R with Square Brackets and Logic Statements](https://www.youtube.com/watch?v=jGf7WNh-LX8)
+
+
+
+
+## Using Script Files. 
+
+1.  In RStudio, go to `File` --> `New File` --> `R Script`. This will open a new `code editor` window in your R Studio, creating a new box in the top left corner. This is the typical format that R Studio is used (with all 4 windows open). 
+2.  Click the save icon, and save this file in your `RBootcamp` folder as `Lab4.R`. 
+3.  In the future you will type all of your commands in the code editor window (the window you just opened) and submit them in one of two ways to the console window (the interactive window you have been doing swirl lessons in). 
+
+Let's test out how to submit commands from the editor window, into the console window now. 
+
+1.  Type `2+2` in your script file. 
+2.  With your cursor still on the line of code you want to submit, click `Run` in the top left corner of the window. Notice it passes the command on that line to the console window, and excecutes that command. 
+3.  With your cursor still on the line of code, press `Ctrl+Enter`. This is simply a keyboard shortcut for the `Run` button. 
+
+If you want to submit multiple lines of code at the same time, you need to highlight all rows to submit before hitting `Run`. 
+
+### Practice
+
+Type the following function in your editor window. Highlight the entire thing and submit it. You won't see any notification if you did it correctly. 
+```{r}
+add_for_me <- function(a,b){
+  a + b
+}
+```
+Test it out by calling the function.  Make sure you see the same output as is displayed below. R output is denoted by the ## in front of each line. 
+```{r}
+add_for_me(5,6)
+```
+
 
 
 <!-- Assessment questions -->

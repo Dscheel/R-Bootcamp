@@ -1,0 +1,110 @@
+---
+title: 'Lab 3: Generating and working with Data'
+output:
+  pdf_document: 
+    highlight: zenburn
+  html_document:
+    highlight: pygments
+    theme: cerulean
+---
+
+# Introduction 
+The goal of this lab is to introduce you to how R deals with the most common way data is stored for analysis, a rectangular format like an Excel spreadsheet. Ideally each row represents data on a single observation and each column contains data on a single variable, or characteristic, of the observation. This is called `tidy data`. We will start to learn some tools to look at the data, and for getting data from an external file into R for analysis. 
+
+
+## Matricies and Data Frames
+
+Complete the **Matricies and Data Frames** Swirl lesson. 
+
+
+### Practice
+Start a new script file. Recreate the following data frame by typing your commands in the code editor. Save the data frame as an object named `iris2`.  
+Ignore the Source: and Groups: header material. Note the first row indicate row numbers, they are not part of the data. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr); library(readr)
+iris %>%  group_by(Species) %>% slice(1)
+```
+
+
+## Looking at Data
+
+Complete the **Looking at Data** Swirl lesson. 
+
+### Practice
+R comes pre-loaded with some training data sets you can practice with. One of those is the full `iris` data by Edgar Anderson. You can read more about this data set by typing `?iris`
+
+1. Compare your `iris2` to the top 4 rows of the `iris` data using `head()`. 
+2. Use `summary()` to find out how many different species of flowers were sampled, and how many flowers from each species were sampled.  
+
+
+## Tidy Data
+
+Review the lecture notes on [Tidy Data](Link).
+
+The following is data collected by the Pew Research Center that examines the relationship between income and religion in the US. In other words, which religions have the wealthiest adherents? 
+```{r, echo=FALSE}
+pew <- read_csv("tidy/pew.csv")
+pew[-5,]
+```
+
+1. What characteristics are being measured here? Hint: There are 3. 
+2. What columns are present in the data but not being displayed here? 
+3. Is this tidy data? 
+4. What would a tidy version of this data set look like? 
+
+
+## Importing Data
+
+In this bootcamp we are only going to explore reading flat files that exist on your computer into R from three most commonly used data sources: A text file, A CSV file and an Excel file. 
+
+Files to download and put into your RBootcamp folder. Make sure you right click and save as, do not just left click or the text file will open in your browser. You cannot save the file as a .txt from an open web page. 
+
+* [email50](,./data/email50.txt)
+* [NCbirths](../data/NCbirths.csv)
+* [OSCounty](../data/OSCounty.xlsx)
+
+Go ahead and open them just to see what they look like. 
+
+#### Text and CSV files
+Text files are very simple files that have a `.txt` file extension. Columns are separated by a `delimiter`. Common delimiters include a space, a comma (.) or a tab. Uncommon delimiters could include a % or even a semi-colon. Follow along with these examples and make sure you can read in the data correctly and that it matches what is shown below. 
+
+We will use the `read.table()` function that is in base R to read in any type of delimited file. Don't forget that you need to update the path shown to **YOUR** path on **YOUR** machine that points to your RBootcamp folder.
+
+A tab delimted text files can be read in using `"\t"` as the deliminator character. In this class you **ALWAYS** want to include `header=TRUE` to signifiy that the data in the first row contains our column names. 
+```{r}
+email50 <- read.table("../data/email50.txt", header=TRUE, sep="\t")
+dim(email50)
+class(email50)
+email50[1:6,1:6]
+```
+
+CSV is a fancy way of saying a text file with comma separated values (i.e. CSV). We could use `read.table()` but `read.csv()` is optimized to read in CSV files. 
+
+```{r}
+NCbirths <- read.csv("../data/NCbirths.csv", header=TRUE)
+dim(NCbirths)
+class(NCbirths)
+head(NCbirths)
+str(NCbirths)
+```
+
+
+#### CSV and Excel files
+The best method I have found so far to read in Excel files is from the `readxl` packages by Hadley Wickham. This packages need to be installed first, and then can be simply loaded each time you start an `R` session where you will be reading in this type of data. Go ahead and install it now.  
+
+The `read_excel()` function is what we are going to use. Note the use of the underscore `_` instead of a period `.` between read and the file type.  
+
+```{r}
+library(readxl)
+OSCounty <- read_excel("../data/OSCounty.xlsx", sheet=1, col_names=TRUE)
+OSCounty[1:6,1:6]
+# str(OSCounty) Not displayed due to its length. 
+```
+
+Notice that `OSCounty` isn't just a data frame, but also of class `tbl_df`. It's just another format of data storage. You are welcome to look up the differnces and any advantages of using `tbl_df` over `data.frame` on your own time, we will not cover those differences in this class. 
+
+
+
+
+

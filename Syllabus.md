@@ -1,6 +1,6 @@
 
 # Syllabus for Math 199 - Fall 2015 
-## A Bootcamp for Reproducible Data Analysis in R
+## Introduction to Reproducible Data Analysis in R
 
 
 ### Course Description
@@ -24,11 +24,14 @@ This is a fast paced 1 unit course conducted over 3 weeks. Learning a programmin
 
 ### Prerequisite
 Basic computer literacy. ELM status. 
-Review the [Intro to the class]("../lecture_notes/0_2_-_Intro_to_the_class.pdf") slides on instructions on how to install the required programs. 
+Review the [Intro to the class](/lecture_notes/0_1_-_Intro_to_the_class.pdf) slides on instructions on how to install the required programs. 
 
 ### Materials
 
-* Textbook: None Required. A list of recommended learning tools will be provided.
+* Textbook: None Required. Good online resources that I recommmend to bookmark are: 
+  - [R Tutorial](http://www.r-tutor.com/r-introduction)
+  - [Quick-R](http://www.statmethods.net/index.html)
+  - [R-Cookbook](http://www.cookbook-r.com/)
 * Computer: Mandatory. A reliable computer (laptop preferred) that you can install programs onto. See me if you do not have a personal computer. 
 * Reliable internet connection.
 
@@ -42,7 +45,7 @@ TBD
 If you need course adaptations or accommodations because of a disability or chronic illness, please contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. The ARC phone number is 530-898-5959, arcdept@csuchico.edu
 
 ### Course outline
-The course schedule can be found [here]("/Schedule.pddf"). Subject to minor modifications. All content will be made available on Day 1 of the course, however the quizzes and homeworks will have set deadlines. 
+The [course schedule](http://norcalbiostat.github.io/R-Bootcamp/Schedule.html) is subject to minor modifications. All content will be made available on Day 1 of the course, however the quizzes and homeworks will have set deadlines. 
 
 It is your responsibility to frequently check the course Piazza forum for updates and changes. 
 

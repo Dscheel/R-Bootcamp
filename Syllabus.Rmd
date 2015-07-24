@@ -27,7 +27,7 @@ Fully online with in person problem solving sessions each Friday (time and loc T
 Friday problem solving sessions (time TBD), and by appointment. 
 
 ### Time Commitment
-This is a fast paced 1 unit course conducted over 3 weeks. Learning a programming language is not trivial, expect to spend 10-12 hours per week for these three weeks if you have never programmed before. 
+This is a fast paced 1 unit course conducted over 3 weeks. Learning a programming language is not trivial, expect to spend around 10 hours per week for these three weeks if you have never programmed before. 
 
 ### Prerequisite
 Basic computer literacy. ELM status. 
@@ -35,7 +35,11 @@ Review the [Intro to the class](/lecture_notes/0_1_-_Intro_to_the_class.pdf) sli
 
 ### Materials
 
-* Textbook: None Required. A list of recommended learning tools will be provided.
+* Textbook: None Required. 
+* Good online resources that I recommmend to bookmark are: 
+    - [R Tutorial](http://www.r-tutor.com/r-introduction)
+    - [Quick-R](http://www.statmethods.net/index.html)
+    - [R-Cookbook](http://www.cookbook-r.com/)
 * Computer: Mandatory. A reliable computer (laptop preferred) that you can install programs onto. See me if you do not have a personal computer. 
 * Reliable internet connection.
 
