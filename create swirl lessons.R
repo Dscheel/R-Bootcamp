@@ -2,7 +2,7 @@
 library(swirlify)
 
 # Set up a new lesson in an existing course
-new_lesson("Looking at Data", "R Bootcamp")
+new_lesson("dplyr", "R Bootcamp")
 
 # Open existing lesson
 set_lesson("C:/Github/R Bootcamp/R_Bootcamp/Matricies_and_Data_Frames/lesson.yaml")

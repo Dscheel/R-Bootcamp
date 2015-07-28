@@ -1,0 +1,34 @@
+---
+title: 'Lab 6: Data cleaning with dplyr'
+output:
+  pdf_document: 
+    highlight: zenburn
+    number_sections: yes
+  html_document:
+    highlight: pygments
+    theme: cerulean
+---
+
+# Introduction 
+
+# Introduction to the 5 basic verbs
+Install the `dplyr` and `nycflights13` packages
+
+Complete the `dplyr` swirl lesson. 
+
+## Practice
+
+Use data camp's examples here
+
+
+# Grouped operations
+Provide markdown and helper document for this. 
+
+
+## Additional Resources
+* [Dplyr vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
+* [Hands-on dplyr tutorial for faster data manipulation in R](https://www.youtube.com/watch?v=jWjqLW-u3hc) You Tube video by Data School
+* This [video recording](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4b82a6bf-2b3d-44d7-8467-a2e49ea59c84) given by Hadley Wickham at the Summer Institute for Statistics for Big Data, Module on Visualizing Big Data in July 2015
+* These video recordings[part1](https://www.youtube.com/watch?v=8SGif63VW6E)/[part2](https://www.youtube.com/watch?v=Ue08LVuk790) from Hadley's tutorial at UseR! 2014 conference at UCLA. 
+* Michael Levy's [talk](https://www.youtube.com/watch?v=KCKBmWsRQko) at the Davis R User's group, October 2014. 
+
