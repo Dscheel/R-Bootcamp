@@ -10,7 +10,7 @@ It is your responsibility to frequently check the course Piazza forum for update
 |  |  | [Lab 2](labs/Lab2_-_Subsetting_Vectors.pdf) | Extracting subsets of data from vectors. |
 |  |  | [Lab 3](labs/Lab3_-_Generating_Data.pdf), [email50](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/email50.txt), [NCbirths](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/NCbirths.csv), [OSCounty](https://rawgit.com/norcalbiostat/R-Bootcamp/gh-pages/data/OSCounty.xlsx)| Matricies and data frames. Looking at data. Importing Data into R. |
 |  | 8/30 | [Quiz 1](link) | Quiz on Intro materials and Labs 1-3. Due by midnight. |
-| 2 | 8/31 - 9/06 | [Lab 4](link) | General structure of functions and arguments. Summary statistics |
+| 2 | 8/31 - 9/06 | [Lab 4](labs/Lab4_-_Factors_Lists_and_Functions.pdf) | Factors and Lists, Functions and their arguments.|
 |  |  | [Lab 5](link) | Data cleaning and aggregation with `dplyr()` |
 |  |  | [Lab 6](link) | Creating basic graphics with `ggplot2()` |
 |  | 9/6 | [Quiz 2](link) |  |
@@ -19,4 +19,4 @@ It is your responsibility to frequently check the course Piazza forum for update
 |  |  | [Lab 9](link) | Lab 9 content - Sample analysis |
 |  | 9/13 | [Quiz 3](link) | Or peer reviewed analysis |
 
-Last Updated: July 24 2015
+Last Updated: July 27 2015

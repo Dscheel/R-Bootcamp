@@ -45,22 +45,24 @@ In this lab we will cover another way to subset the data using the function `sub
 
 
 ## Using Script Files. 
+During the Swirl lessons you have been typing commands directly into the interactive `console` window. This is not commonly done and not the way any analysis should be performed. Once you submit that command it's gone, and multi-line commands are difficult to type correctly "on the fly" like that. Instead code is written in a separate file, a `code` or `script` file. With a few exceptions (such as the swirl lessons) from here on out you will be writing all your commands in a code file. Let's get started.
+
 
 1.  In RStudio, go to `File` --> `New File` --> `R Script`. This will open a new `code editor` window in your R Studio, creating a new box in the top left corner. This is the typical format that R Studio is used (with all 4 windows open). 
-2.  Click the save icon, and save this file in your `RBootcamp` folder as `Lab4.R`. 
-3.  In the future you will type all of your commands in the code editor window (the window you just opened) and submit them in one of two ways to the console window (the interactive window you have been doing swirl lessons in). 
+2.  Click the save icon, and save this file in your `RBootcamp` folder as `Lab2.R`. 
 
-Let's test out how to submit commands from the editor window, into the console window now. 
+This new window is where you will type all of your commands. This gives you a chance to fix typos and make small adjustments before you submit your command. Let's test out both of the ways we can submit commands from the editor window, into the console window. 
 
-1.  Type `2+2` in your script file. 
-2.  With your cursor still on the line of code you want to submit, click `Run` in the top left corner of the window. Notice it passes the command on that line to the console window, and excecutes that command. 
-3.  With your cursor still on the line of code, press `Ctrl+Enter`. This is simply a keyboard shortcut for the `Run` button. 
+Type `2+2` in your script file. 
 
-If you want to submit multiple lines of code at the same time, you need to highlight all rows to submit before hitting `Run`. 
+1.  With your cursor still on the line of code you want to submit, click `Run` in the top left corner of the window. Notice it passes the command on that line to the console window, and excecutes that command. 
+2.  With your cursor still on the line of code, press `Ctrl+Enter`. This is simply a keyboard shortcut for the `Run` button. 
+
+If you want to submit multiple lines of code at the same time, you need to highlight all rows to submit before hitting `Run` or using Ctrl + Enter. 
 
 ### Practice
 
-Type the following function in your editor window. Highlight the entire thing and submit it. You won't see any notification if you did it correctly. 
+Type the following function in your editor window. Highlight the entire thing and submit it. You won't see any output if you did it correctly. 
 ```{r}
 add_for_me <- function(a,b){
   a + b
